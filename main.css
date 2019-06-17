@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body, select {
+  font-size: 14px;
+}
+
+form {
+  margin: 5px;
+}
+
+p {
+  color: red;
+  margin: 5px;
+}
+
+b {
+  color: blue;
+}
