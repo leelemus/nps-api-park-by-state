@@ -12,7 +12,7 @@
  <section>
     <h1>National Park Service State Search</h1>
     <form id="js-parkForm" class="parkForm">
-    <legend>Search National Parks by State<br/>Click and hold CTRL to pick more than one state.</legend>
+    <legend>Search National Parks by State<br/>Hold CMD (Apple) or CTRL (Windows) while clicking to choose more than one state.</legend>
     <select name="multiple" multiple="multiple">
             <option value="AL">Alabama (AL)</option>
             <option value="AK">Alaska (AK)</option>
@@ -66,13 +66,13 @@
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
     </select>
-    <label for="parkNumber">Maximum results wanted:</label>
+    <label for="parkNumber">Enter number of results wanted:</label>
     <input type="number" name="parkNumber" class="parkNumber" id="js-maxResults" value="10" />
     <input type="submit" class="parkSubmit" name="sumbit" class="submit"/>
     </form>
 </section>
 <section id="results" class="hidden">
-    <h2>Results:</b> <span id="results"></h2>
+    <h2>Results:</h2>
     <h2 id="#js-errorMessage"></h2>
     <ol id="parkResults">
     </ol>
