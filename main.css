@@ -20,27 +20,40 @@ select, legend, label, input {
     margin: 5px auto;
 }
 
+legend {
+    font-size: 1.5em;
+}
+
 label {
     margin-top: 2em;
     font-weight: bold;
+    font-size: 1.5em
 }
 
 select {
     height: 30vh;
+    width: 30vw;
 }
 
 .parkNumber {
     font-size: 2em;
     line-height: 1em;
-    width: 8em;
+    width: 30vw;
     border: 2px solid teal;
     text-align: center;
 }
 
 .parkSubmit {
-    width: 6em;
-    line-height: 2em;
+    margin-top: 5vh;
+    width: 30vw;
+    line-height: 1.5em;
+    font-size: 2em;
     background-color: aquamarine;
+}
+
+.parkSubmit:hover {
+    background-color: rebeccapurple;
+    color: white;
 }
 
 h1, h2, h3 {
@@ -64,6 +77,6 @@ p {
   font-size: 1em;
 }
 
-b {
-  color: blue;
-}
+.hidden {
+    display: none;
+  }

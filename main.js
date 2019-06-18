@@ -13,7 +13,11 @@ function formatStateQuery(stateValues) {
   function displayResults(eachPark) {
     // if there are previous results, remove them
     $('#parkResults').append(`
-        <li><h3>${eachPark.fullName}</h3><p><strong>Description: </strong>${eachPark.description}</p><p><strong>URL: </strong>${eachPark.url}</p></li>
+        <li>
+            <h3>${eachPark.fullName}</h3>
+            <p><strong>Description: </strong>${eachPark.description}</p>
+            <p><strong>URL: </strong><a href="${eachPark.url}" target="_blank">${eachPark.url}</a></p>
+        </li>
     `);
   };
 
@@ -56,8 +60,10 @@ function getResults(stateValues, maxResults) {
         })
         .then(responseJson => responseJson.data.forEach(displayResults))
         .catch(err => {
-          $('#js-error-message').text(`Something went wrong: ${err.message}`);
+          $('#js-errorMessage').text(`Something went wrong: ${err.message}`);
         });
+    
+    $('#results').removeClass('hidden');
 }
 
 function parkGenerator() {
