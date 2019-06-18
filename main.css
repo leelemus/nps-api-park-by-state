@@ -80,3 +80,12 @@ p {
 .hidden {
     display: none;
   }
+
+#parkResults {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#parkResults li {
+    margin: 3vw auto;
+}
