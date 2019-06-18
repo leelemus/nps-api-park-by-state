@@ -4,15 +4,64 @@
 
 body, select {
   font-size: 14px;
+  margin: 0;
+
 }
 
-form {
-  margin: 5px;
+.parkForm {
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+select, legend, label, input {
+    text-align: center;
+    margin: 5px auto;
+}
+
+label {
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+select {
+    height: 30vh;
+}
+
+.parkNumber {
+    font-size: 2em;
+    line-height: 1em;
+    width: 8em;
+    border: 2px solid teal;
+    text-align: center;
+}
+
+.parkSubmit {
+    width: 6em;
+    line-height: 2em;
+    background-color: aquamarine;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 { 
+    font-size: 2em;
 }
 
 p {
-  color: red;
   margin: 5px;
+  font-size: 1em;
 }
 
 b {

@@ -11,8 +11,8 @@
 <body>
  <section>
     <h1>National Park Service State Search</h1>
-    <h2>Pick one or more states to see what park they have:</h2>
-    <form id="js-parkForm">
+    <form id="js-parkForm" class="parkForm">
+    <legend>National Park Service State Search<br/>Pick one or more states to see what park they have</legend>
     <select name="multiple" multiple="multiple">
             <option value="AL">Alabama (AL)</option>
             <option value="AK">Alaska (AK)</option>
@@ -66,12 +66,13 @@
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
     </select>
-    <input type="number" id="js-maxResults" value="10" />
-    <input type="submit" name="sumbit" class="submit"/>
+    <label for="parkNumber">Maximum results wanted:</label>
+    <input type="number" name="parkNumber" class="parkNumber" id="js-maxResults" value="10" />
+    <input type="submit" class="parkSubmit" name="sumbit" class="submit"/>
     </form>
 </section>
 <section>
-    <p><b>Results:</b> <span id="results"></span></p>
+    <h2>Results:</b> <span id="results"></h2>
     <ol id="parkResults">
     </ol>
 </section>
